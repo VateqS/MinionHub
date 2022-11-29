@@ -1,0 +1,580 @@
+local Rayfield = loadstring(game:HttpGet("https://raw.githubusercontent.com/shlexware/Rayfield/main/source"))()
+
+local plr = game:GetService("Players").LocalPlayer
+local Notification = require(game:GetService("ReplicatedStorage").Notification)
+local Data = plr:WaitForChild("Data")
+Notification.new("<Color=Green>Welcome To VisualHub<Color=/>"):Display()
+print("Welcome To VisualHub")
+
+local Window = Rayfield:CreateWindow({
+	Name = "VisualHub For BloxFruits",
+	LoadingTitle = "VisualHub",
+	LoadingSubtitle = "by VateqS",
+	ConfigurationSaving = {
+		Enabled = true,
+		FolderName = nil, -- Create a custom folder for your hub/game
+		FileName = "VisualHub"
+	},
+        Discord = {
+        	Enabled = false,
+        	Invite = "", -- The Discord invite code, do not include discord.gg/
+        	RememberJoins = false -- Set this to false to make them join the discord every time they load it up
+        },
+	KeySystem = true, -- Set this to true to use our key system
+	KeySettings = {
+		Title = "VisualHub",
+		Subtitle = "Key System",
+		Note = "version: 1.1.0 \          KEY=UPDATE3",
+		FileName = "",
+		SaveKey = false,
+		GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+		Key = "UPDATE3"
+	}
+})
+
+local Tab = Window:CreateTab("#info", 4483362458) -- Title, Image
+local Section = Tab:CreateSection("OWNERS: VATEQS")
+local Section = Tab:CreateSection("Developers: NONE")
+local Section = Tab:CreateSection("MODERATORS: NONE")
+local Section = Tab:CreateSection("")
+local Section = Tab:CreateSection("Created 18/11/2022")
+local Section = Tab:CreateSection("Updated 21/11/2022")
+local Section = Tab:CreateSection("Coming Update 25/11/2022")
+local Section = Tab:CreateSection("")
+local Section = Tab:CreateSection("updatename: UPDATE3")
+local Section = Tab:CreateSection("TikTok: vateq.")
+local Section = Tab:CreateSection("version: 1.1.0")
+
+local Section = Tab:CreateSection("OTHERS:")
+local Section = Tab:CreateSection("")
+
+local Button = Tab:CreateButton({
+	Name = "Open Furk",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/UltraStuff/scripts2/main/bf", true))()
+	end,
+})
+
+local Tab = Window:CreateTab("Update Log", 4483345998) -- Title, Image
+
+local Section = Tab:CreateSection("Update Log:")
+local Section = Tab:CreateSection("")
+local Section = Tab:CreateSection("added anti afk option")
+local Section = Tab:CreateSection("added Chat Options")
+local Section = Tab:CreateSection("added Clear Chat")
+local Section = Tab:CreateSection("Fixed Some Bugs")
+local Section = Tab:CreateSection("Updates every week")
+local Section = Tab:CreateSection("Working At Chat on turn any cheat")
+local Section = Tab:CreateSection("Working At Settings")
+local Section = Tab:CreateSection("& More")
+
+
+local Tab = Window:CreateTab("Points", 4483345998) -- Title, Image
+local Section = Tab:CreateSection("   CASH   ")
+
+local Button = Tab:CreateButton({
+	Name = "Earn 250K$",
+	Callback = function()
+		local plr = game:GetService("Players").LocalPlayer
+		local Notification = require(game:GetService("ReplicatedStorage").Notification)
+		local Data = plr:WaitForChild("Data")
+		local EXPFunction = require(game.ReplicatedStorage:WaitForChild("EXPFunction"))
+		local LevelUp = require(game:GetService("ReplicatedStorage").Effect.Container.LevelUp)
+		local Sound = require(game:GetService("ReplicatedStorage").Util.Sound)
+		local LevelUpSound = game:GetService("ReplicatedStorage").Util.Sound.Storage.Other:FindFirstChild("LevelUp_Proxy")
+		Notification.new("Earned <Color=Green>$250,000<Color=/>"):Display()
+		plr.Data.Beli.Value = plr.Data.Beli.Value + 250000
+		game:GetService("StarterGui"):SetCore("ChatMakeSystemMessage", {
+						Text = "[VISUALHUB]: Added 250000 Beli to you'r Account ",
+						Color = Color3.fromRGB(0, 255, 0),
+						Font = Enum.Font.GothamBold,
+						TextSize = 16,
+				})
+	end,
+})
+
+local Input = Tab:CreateInput({
+	Name = "Set Cash Amount",
+	PlaceholderText = "",
+	RemoveTextAfterFocusLost = false,
+	Callback = function(Cash)
+		local plr = game:GetService("Players").LocalPlayer
+		local Notification = require(game:GetService("ReplicatedStorage").Notification)
+		local Data = plr:WaitForChild("Data")
+		local EXPFunction = require(game.ReplicatedStorage:WaitForChild("EXPFunction"))
+		local LevelUp = require(game:GetService("ReplicatedStorage").Effect.Container.LevelUp)
+		local Sound = require(game:GetService("ReplicatedStorage").Util.Sound)
+		local LevelUpSound = game:GetService("ReplicatedStorage").Util.Sound.Storage.Other:FindFirstChild("LevelUp_Proxy")
+		Notification.new("Changed Beli <Color=Green>".."$"..(Cash).."<Color=/>"):Display()
+		plr.Data.Beli.Value = plr.Data.Beli.Value == 0
+		plr.Data.Beli.Value = plr.Data.Beli.Value + (Cash)
+		game:GetService("StarterGui"):SetCore("ChatMakeSystemMessage", {
+						Text = "[VISUALHUB]: Changed Beli to "..(Cash).."",
+						Color = Color3.fromRGB(0, 255, 0),
+						Font = Enum.Font.GothamBold,
+						TextSize = 16,
+				})
+	end,
+})
+
+local Button = Tab:CreateButton({
+	Name = "Earn 25K€",
+	Callback = function()
+		local plr = game:GetService("Players").LocalPlayer
+		local Notification = require(game:GetService("ReplicatedStorage").Notification)
+		local Data = plr:WaitForChild("Data")
+		local EXPFunction = require(game.ReplicatedStorage:WaitForChild("EXPFunction"))
+		local LevelUp = require(game:GetService("ReplicatedStorage").Effect.Container.LevelUp)
+		local Sound = require(game:GetService("ReplicatedStorage").Util.Sound)
+		local LevelUpSound = game:GetService("ReplicatedStorage").Util.Sound.Storage.Other:FindFirstChild("LevelUp_Proxy")
+		Notification.new("Earned <Color=Purple>€25,000<Color=/>"):Display()
+		plr.Data.Fragments.Value = plr.Data.Fragments.Value + 25000
+		game:GetService("StarterGui"):SetCore("ChatMakeSystemMessage", {
+						Text = "[VISUALHUB]: Added 25000 Fragments to You'r Account ",
+						Color = Color3.fromRGB(0, 255, 0),
+						Font = Enum.Font.GothamBold,
+						TextSize = 16,
+				})
+	end,
+})
+
+local Input = Tab:CreateInput({
+	Name = "Set Fragments Amount",
+	PlaceholderText = "",
+	RemoveTextAfterFocusLost = false,
+	Callback = function(Frag)
+		local plr = game:GetService("Players").LocalPlayer
+		local Notification = require(game:GetService("ReplicatedStorage").Notification)
+		local Data = plr:WaitForChild("Data")
+		local EXPFunction = require(game.ReplicatedStorage:WaitForChild("EXPFunction"))
+		local LevelUp = require(game:GetService("ReplicatedStorage").Effect.Container.LevelUp)
+		local Sound = require(game:GetService("ReplicatedStorage").Util.Sound)
+		local LevelUpSound = game:GetService("ReplicatedStorage").Util.Sound.Storage.Other:FindFirstChild("LevelUp_Proxy")
+		Notification.new("Changed Fragments <Color=Purple>".."€"..(Frag).."<Color=/>"):Display()
+		plr.Data.Fragments.Value = plr.Data.Fragments.Value == 0
+		plr.Data.Fragments.Value = plr.Data.Fragments.Value + (Frag)
+		game:GetService("StarterGui"):SetCore("ChatMakeSystemMessage", {
+						Text = "[VISUALHUB]: Changed Fragments to "..(Frag).."",
+						Color = Color3.fromRGB(0, 255, 0),
+						Font = Enum.Font.GothamBold,
+						TextSize = 16,
+				})
+	end,
+})
+
+local Tab = Window:CreateTab("Level", 4483345998) -- Title, Image
+
+local Button = Tab:CreateButton({
+	Name = "LevelUp",
+	Callback = function()
+		local plr = game:GetService("Players").LocalPlayer
+		local Notification = require(game:GetService("ReplicatedStorage").Notification)
+		local Data = plr:WaitForChild("Data")
+		local EXPFunction = require(game.ReplicatedStorage:WaitForChild("EXPFunction"))
+		local LevelUp = require(game:GetService("ReplicatedStorage").Effect.Container.LevelUp)
+		local Sound = require(game:GetService("ReplicatedStorage").Util.Sound)
+		local LevelUpSound = game:GetService("ReplicatedStorage").Util.Sound.Storage.Other:FindFirstChild("LevelUp_Proxy")
+		Notification.new("LevelUp <Color=Green>1<Color=/><Color=White><Color=/>"):Display()
+		plr.Data.Level.Value = plr.Data.Level.Value + 1
+		game:GetService("StarterGui"):SetCore("ChatMakeSystemMessage", {
+						Text = "[VISUALHUB]: Added 1 Level To You'r Account",
+						Color = Color3.fromRGB(0, 255, 0),
+						Font = Enum.Font.GothamBold,
+						TextSize = 16,
+				})
+	end,
+})
+
+local Button = Tab:CreateButton({
+	Name = "MAX Level",
+	Callback = function()
+		local plr = game:GetService("Players").LocalPlayer
+		local Notification = require(game:GetService("ReplicatedStorage").Notification)
+		local Data = plr:WaitForChild("Data")
+		local EXPFunction = require(game.ReplicatedStorage:WaitForChild("EXPFunction"))
+		local LevelUp = require(game:GetService("ReplicatedStorage").Effect.Container.LevelUp)
+		local Sound = require(game:GetService("ReplicatedStorage").Util.Sound)
+		local LevelUpSound = game:GetService("ReplicatedStorage").Util.Sound.Storage.Other:FindFirstChild("LevelUp_Proxy")
+		Notification.new("Changed Level To <Color=Green>2400<Color=/>"):Display()
+		plr.Data.Level.Value = plr.Data.Level.Value == 0
+		plr.Data.Level.Value = plr.Data.Level.Value + 2400
+		game:GetService("StarterGui"):SetCore("ChatMakeSystemMessage", {
+						Text = "[VISUALHUB]: Changed Level to 2400",
+						Color = Color3.fromRGB(0, 255, 0),
+						Font = Enum.Font.GothamBold,
+						TextSize = 16,
+				})
+	end,
+})
+
+local Input = Tab:CreateInput({
+	Name = "Set Level Amount",
+	PlaceholderText = "",
+	RemoveTextAfterFocusLost = false,
+	Callback = function(lvl)
+		local plr = game:GetService("Players").LocalPlayer
+		local Notification = require(game:GetService("ReplicatedStorage").Notification)
+		local Data = plr:WaitForChild("Data")
+		local EXPFunction = require(game.ReplicatedStorage:WaitForChild("EXPFunction"))
+		local LevelUp = require(game:GetService("ReplicatedStorage").Effect.Container.LevelUp)
+		local Sound = require(game:GetService("ReplicatedStorage").Util.Sound)
+		local LevelUpSound = game:GetService("ReplicatedStorage").Util.Sound.Storage.Other:FindFirstChild("LevelUp_Proxy")
+		Notification.new("<Color=Green>Changed Level<Color=/>"):Display()
+		plr.Data.Level.Value = plr.Data.Level.Value == 0
+		plr.Data.Level.Value = plr.Data.Level.Value + (lvl)
+		game:GetService("StarterGui"):SetCore("ChatMakeSystemMessage", {
+						Text = "[VISUALHUB]: Changed Level to "..(lvl).."",
+						Color = Color3.fromRGB(0, 255, 0),
+						Font = Enum.Font.GothamBold,
+						TextSize = 16,
+				})
+	end,
+})
+
+local Tab = Window:CreateTab("Statistics", 4483345998) -- Title, Image
+local Section = Tab:CreateSection("Set Stats")
+local Section = Tab:CreateSection("")
+local Button = Tab:CreateButton({
+	Name = "Give 100 Points",
+	Callback = function()
+		local plr = game:GetService("Players").LocalPlayer
+		local Notification = require(game:GetService("ReplicatedStorage").Notification)
+		local Data = plr:WaitForChild("Data")
+		local EXPFunction = require(game.ReplicatedStorage:WaitForChild("EXPFunction"))
+		local LevelUp = require(game:GetService("ReplicatedStorage").Effect.Container.LevelUp)
+		local Sound = require(game:GetService("ReplicatedStorage").Util.Sound)
+		local LevelUpSound = game:GetService("ReplicatedStorage").Util.Sound.Storage.Other:FindFirstChild("LevelUp_Proxy")
+		Notification.new("Earned Points <Color=Blue>100<Color=/>"):Display()
+		plr.Data.Points.Value = plr.Data.Points.Value + 100
+		game:GetService("StarterGui"):SetCore("ChatMakeSystemMessage", {
+						Text = "[VISUALHUB]: Added 100 Points to You'r Account",
+						Color = Color3.fromRGB(0, 255, 0),
+						Font = Enum.Font.GothamBold,
+						TextSize = 16,
+				})
+	end,
+})
+
+local Input = Tab:CreateInput({
+	Name = "Set Points Amount",
+	PlaceholderText = "",
+	RemoveTextAfterFocusLost = false,
+	Callback = function(pkt)
+		local plr = game:GetService("Players").LocalPlayer
+		local Notification = require(game:GetService("ReplicatedStorage").Notification)
+		local Data = plr:WaitForChild("Data")
+		local EXPFunction = require(game.ReplicatedStorage:WaitForChild("EXPFunction"))
+		local LevelUp = require(game:GetService("ReplicatedStorage").Effect.Container.LevelUp)
+		local Sound = require(game:GetService("ReplicatedStorage").Util.Sound)
+		local LevelUpSound = game:GetService("ReplicatedStorage").Util.Sound.Storage.Other:FindFirstChild("LevelUp_Proxy")
+		Notification.new("Changed Points <Color=Red>"..(pkt).."<Color=/>"):Display()
+		plr.Data.Points.Value = plr.Data.Points.Value == 0
+		plr.Data.Points.Value = plr.Data.Points.Value + (pkt)
+		game:GetService("StarterGui"):SetCore("ChatMakeSystemMessage", {
+						Text = "[VISUALHUB]: Changed Points to "..(pkt).."",
+						Color = Color3.fromRGB(0, 255, 0),
+						Font = Enum.Font.GothamBold,
+						TextSize = 16,
+				})
+	end,
+})
+
+local Button = Tab:CreateButton({
+	Name = "Give 1 Refund",
+	Callback = function()
+		local plr = game:GetService("Players").LocalPlayer
+		local Notification = require(game:GetService("ReplicatedStorage").Notification)
+		local Data = plr:WaitForChild("Data")
+		local EXPFunction = require(game.ReplicatedStorage:WaitForChild("EXPFunction"))
+		local LevelUp = require(game:GetService("ReplicatedStorage").Effect.Container.LevelUp)
+		local Sound = require(game:GetService("ReplicatedStorage").Util.Sound)
+		local LevelUpSound = game:GetService("ReplicatedStorage").Util.Sound.Storage.Other:FindFirstChild("LevelUp_Proxy")
+		Notification.new("Earned Refunds <Color=Red>1<Color=/>"):Display()
+		plr.Data.StatRefunds.Value = plr.Data.StatRefunds.Value + 1
+		game:GetService("StarterGui"):SetCore("ChatMakeSystemMessage", {
+						Text = "[VISUALHUB]: Added 1 Refund to You'r Account",
+						Color = Color3.fromRGB(0, 255, 0),
+						Font = Enum.Font.GothamBold,
+						TextSize = 16,
+				})
+	end,
+})
+
+local Input = Tab:CreateInput({
+	Name = "Set Refunds Amount",
+	PlaceholderText = "",
+	RemoveTextAfterFocusLost = false,
+	Callback = function(ref)
+		local plr = game:GetService("Players").LocalPlayer
+		local Notification = require(game:GetService("ReplicatedStorage").Notification)
+		local Data = plr:WaitForChild("Data")
+		local EXPFunction = require(game.ReplicatedStorage:WaitForChild("EXPFunction"))
+		local LevelUp = require(game:GetService("ReplicatedStorage").Effect.Container.LevelUp)
+		local Sound = require(game:GetService("ReplicatedStorage").Util.Sound)
+		local LevelUpSound = game:GetService("ReplicatedStorage").Util.Sound.Storage.Other:FindFirstChild("LevelUp_Proxy")
+		Notification.new("Changed Refunds <Color=Red>"..(ref).."<Color=/>"):Display()
+		plr.Data.StatRefunds.Value = plr.Data.StatRefunds.Value == 0
+		plr.Data.StatRefunds.Value = plr.Data.StatRefunds.Value + (ref)
+		game:GetService("StarterGui"):SetCore("ChatMakeSystemMessage", {
+						Text = "[VISUALHUB]: Changed RefundStats to "..(ref).."",
+						Color = Color3.fromRGB(0, 255, 0),
+						Font = Enum.Font.GothamBold,
+						TextSize = 16,
+				})
+	end,
+})
+
+local Section = Tab:CreateSection("")
+local Section = Tab:CreateSection("Blox Stats")
+local Section = Tab:CreateSection("")
+
+local Input = Tab:CreateInput({
+	Name = "Melee",
+	PlaceholderText = "",
+	RemoveTextAfterFocusLost = false,
+	Callback = function(melee)
+		local plr = game:GetService("Players").LocalPlayer
+		local Notification = require(game:GetService("ReplicatedStorage").Notification)
+		local Data = plr:WaitForChild("Data")
+		local EXPFunction = require(game.ReplicatedStorage:WaitForChild("EXPFunction"))
+		local LevelUp = require(game:GetService("ReplicatedStorage").Effect.Container.LevelUp)
+		local Sound = require(game:GetService("ReplicatedStorage").Util.Sound)
+		local LevelUpSound = game:GetService("ReplicatedStorage").Util.Sound.Storage.Other:FindFirstChild("LevelUp_Proxy")
+		Notification.new("Stats Melee To <Color=Yellow>"..(melee).."<Color=/>"):Display()
+		plr.Data.Stats.Melee.Level.Value = plr.Data.Stats.Melee.Level.Value == 0
+		plr.Data.Stats.Melee.Level.Value = plr.Data.Stats.Melee.Level.Value + (melee)
+		game:GetService("StarterGui"):SetCore("ChatMakeSystemMessage", {
+						Text = "[VISUALHUB]: Changed Melee Stats to "..(melee).."",
+						Color = Color3.fromRGB(0, 255, 0),
+						Font = Enum.Font.GothamBold,
+						TextSize = 16,
+				})
+	end,
+})
+
+local Input = Tab:CreateInput({
+	Name = "Defense",
+	PlaceholderText = "",
+	RemoveTextAfterFocusLost = false,
+	Callback = function(dfe)
+		local plr = game:GetService("Players").LocalPlayer
+		local Notification = require(game:GetService("ReplicatedStorage").Notification)
+		local Data = plr:WaitForChild("Data")
+		local EXPFunction = require(game.ReplicatedStorage:WaitForChild("EXPFunction"))
+		local LevelUp = require(game:GetService("ReplicatedStorage").Effect.Container.LevelUp)
+		local Sound = require(game:GetService("ReplicatedStorage").Util.Sound)
+		local LevelUpSound = game:GetService("ReplicatedStorage").Util.Sound.Storage.Other:FindFirstChild("LevelUp_Proxy")
+		Notification.new("Stats Defense to <Color=Yellow>"..(dfe).."<Color=/>"):Display()
+		plr.Data.Stats.Defense.Level.Value = plr.Data.Stats.Defense.Level.Value == 0
+		plr.Data.Stats.Defense.Level.Value = plr.Data.Stats.Defense.Level.Value + (dfe)
+		game:GetService("StarterGui"):SetCore("ChatMakeSystemMessage", {
+						Text = "[VISUALHUB]: Changed Defense Stats to "..(dfe).."",
+						Color = Color3.fromRGB(0, 255, 0),
+						Font = Enum.Font.GothamBold,
+						TextSize = 16,
+				})
+	end,
+})
+
+local Input = Tab:CreateInput({
+	Name = "Sword",
+	PlaceholderText = "",
+	RemoveTextAfterFocusLost = false,
+	Callback = function(sw)
+		local plr = game:GetService("Players").LocalPlayer
+		local Notification = require(game:GetService("ReplicatedStorage").Notification)
+		local Data = plr:WaitForChild("Data")
+		local EXPFunction = require(game.ReplicatedStorage:WaitForChild("EXPFunction"))
+		local LevelUp = require(game:GetService("ReplicatedStorage").Effect.Container.LevelUp)
+		local Sound = require(game:GetService("ReplicatedStorage").Util.Sound)
+		local LevelUpSound = game:GetService("ReplicatedStorage").Util.Sound.Storage.Other:FindFirstChild("LevelUp_Proxy")
+		Notification.new("Stats Sword to <Color=Yellow>"..(sw).."<Color=/>"):Display()
+		plr.Data.Stats.Sword.Level.Value = plr.Data.Stats.Sword.Level.Value == 0
+    plr.Data.Stats.Sword.Level.Value = plr.Data.Stats.Sword.Level.Value + (sw)
+		game:GetService("StarterGui"):SetCore("ChatMakeSystemMessage", {
+						Text = "[VISUALHUB]: Changed Sword Stats to "..(sw).."",
+						Color = Color3.fromRGB(0, 255, 0),
+						Font = Enum.Font.GothamBold,
+						TextSize = 16,
+				})
+	end,
+})
+
+local Input = Tab:CreateInput({
+	Name = "Gun",
+	PlaceholderText = "",
+	RemoveTextAfterFocusLost = false,
+	Callback = function(g)
+		local plr = game:GetService("Players").LocalPlayer
+		local Notification = require(game:GetService("ReplicatedStorage").Notification)
+		local Data = plr:WaitForChild("Data")
+		local EXPFunction = require(game.ReplicatedStorage:WaitForChild("EXPFunction"))
+		local LevelUp = require(game:GetService("ReplicatedStorage").Effect.Container.LevelUp)
+		local Sound = require(game:GetService("ReplicatedStorage").Util.Sound)
+		local LevelUpSound = game:GetService("ReplicatedStorage").Util.Sound.Storage.Other:FindFirstChild("LevelUp_Proxy")
+		Notification.new("Stats Gun to <Color=Yellow>"..(g).."<Color=/>"):Display()
+		plr.Data.Stats.Gun.Level.Value = plr.Data.Stats.Gun.Level.Value == 0
+    plr.Data.Stats.Gun.Level.Value = plr.Data.Stats.Gun.Level.Value + (g)
+		game:GetService("StarterGui"):SetCore("ChatMakeSystemMessage", {
+						Text = "[VISUALHUB]: Changed Gun Stats to "..(g).."",
+						Color = Color3.fromRGB(0, 255, 0),
+						Font = Enum.Font.GothamBold,
+						TextSize = 16,
+				})
+	end,
+})
+
+local Section = Tab:CreateSection("Devil Fruits Is Turned OFF")
+local Section = Tab:CreateSection("Because its not working")
+
+local Tab = Window:CreateTab("Titles", 4483345998) -- Title, Image
+local Section = Tab:CreateSection("Titles")
+local Section = Tab:CreateSection("")
+
+local Input = Tab:CreateInput({
+	Name = "White Text",
+	PlaceholderText = "",
+	RemoveTextAfterFocusLost = false,
+	Callback = function(wh)
+		local plr = game:GetService("Players").LocalPlayer
+		local Notification = require(game:GetService("ReplicatedStorage").Notification)
+		local Data = plr:WaitForChild("Data")
+		Notification.new(wh):Display()
+		print(wh)
+		game:GetService("StarterGui"):SetCore("ChatMakeSystemMessage", {
+						Text = "[VISUALHUB]: "..(wh).."",
+						Color = Color3.fromRGB(0, 255, 0),
+						Font = Enum.Font.GothamBold,
+						TextSize = 16,
+				})
+	end,
+})
+
+local Input = Tab:CreateInput({
+	Name = "Green Text",
+	PlaceholderText = "",
+	RemoveTextAfterFocusLost = false,
+	Callback = function(notifi)
+		local plr = game:GetService("Players").LocalPlayer
+		local Notification = require(game:GetService("ReplicatedStorage").Notification)
+		local Data = plr:WaitForChild("Data")
+		Notification.new("<Color=Green>"..notifi.."<Color=/>"):Display()
+		print(notifi)
+		game:GetService("StarterGui"):SetCore("ChatMakeSystemMessage", {
+						Text = "[VISUALHUB]: "..(notifi).."",
+						Color = Color3.fromRGB(0, 255, 0),
+						Font = Enum.Font.GothamBold,
+						TextSize = 16,
+				})
+	end,
+})
+
+local Input = Tab:CreateInput({
+	Name = "Red Text",
+	PlaceholderText = "",
+	RemoveTextAfterFocusLost = false,
+	Callback = function(notifi)
+		local plr = game:GetService("Players").LocalPlayer
+		local Notification = require(game:GetService("ReplicatedStorage").Notification)
+		local Data = plr:WaitForChild("Data")
+		Notification.new("<Color=Red>"..notifi.."<Color=/>"):Display()
+		print(notifi)
+		game:GetService("StarterGui"):SetCore("ChatMakeSystemMessage", {
+						Text = "[VISUALHUB]: "..(notifi).."",
+						Color = Color3.fromRGB(0, 255, 0),
+						Font = Enum.Font.GothamBold,
+						TextSize = 16,
+				})
+	end,
+})
+
+local Input = Tab:CreateInput({
+	Name = "Blue Text",
+	PlaceholderText = "",
+	RemoveTextAfterFocusLost = false,
+	Callback = function(notifi)
+		local plr = game:GetService("Players").LocalPlayer
+		local Notification = require(game:GetService("ReplicatedStorage").Notification)
+		local Data = plr:WaitForChild("Data")
+		Notification.new("<Color=Blue>"..notifi.."<Color=/>"):Display()
+		print(notifi)
+		game:GetService("StarterGui"):SetCore("ChatMakeSystemMessage", {
+						Text = "[VISUALHUB]: "..(notifi).."",
+						Color = Color3.fromRGB(0, 255, 0),
+						Font = Enum.Font.GothamBold,
+						TextSize = 16,
+				})
+	end,
+})
+
+local Input = Tab:CreateInput({
+	Name = "Black Text",
+	PlaceholderText = "",
+	RemoveTextAfterFocusLost = false,
+	Callback = function(notifi)
+		local plr = game:GetService("Players").LocalPlayer
+		local Notification = require(game:GetService("ReplicatedStorage").Notification)
+		local Data = plr:WaitForChild("Data")
+		Notification.new("<Color=Black>"..notifi.."<Color=/>"):Display()
+		print(notifi)
+		game:GetService("StarterGui"):SetCore("ChatMakeSystemMessage", {
+						Text = "[VISUALHUB]: "..(notifi).."",
+						Color = Color3.fromRGB(0, 255, 0),
+						Font = Enum.Font.GothamBold,
+						TextSize = 16,
+				})
+	end,
+})
+
+local Section = Tab:CreateSection("Button Title:")
+local Section = Tab:CreateSection("")
+
+local Tab = Window:CreateTab("others", 4483345998) -- Title, Image
+
+local Button = Tab:CreateButton({
+	Name = "Anti afk",
+	Callback = function()
+		repeat wait() until game:IsLoaded()
+				game:GetService("Players").LocalPlayer.Idled:connect(function()
+				game:GetService("VirtualUser"):ClickButton2(Vector2.new())
+				local vu = game:GetService("VirtualUser")
+		end)
+		game:GetService("Players").LocalPlayer.Idled:connect(function()
+			 vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+			 wait(1)
+			 vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+		game:GetService("StarterGui"):SetCore("ChatMakeSystemMessage", {
+	 						Text = "[VISUALHUB]: "..(notifi).."",
+	 						Color = Color3.fromRGB(0, 255, 0),
+	 						Font = Enum.Font.GothamBold,
+	 						TextSize = 16,
+	 				})
+		end)
+	end,
+})
+
+local Tab = Window:CreateTab("Chat", 4483345998) -- Title, Image
+
+local Button = Tab:CreateButton({
+	Name = "ClearChat",
+	Callback = function()
+		game:GetService("StarterGui"):SetCore("ChatMakeSystemMessage", {
+						Text = "[VISUALHUB]: Clear Chat Activated",
+						Color = Color3.fromRGB(0, 255, 0),
+						Font = Enum.Font.GothamBold,
+						TextSize = 16,
+				})
+
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/VateqS/Visual0Hub/main/ClearChat"))()
+	
+	game:GetService("StarterGui"):SetCore("ChatMakeSystemMessage", {
+					Text = "[VISUALHUB]: Chat Succesfully Cleared",
+					Color = Color3.fromRGB(0, 255, 0),
+					Font = Enum.Font.GothamBold,
+					TextSize = 16,
+			})
+	end,
+})
+
+local Tab = Window:CreateTab("Settings", 4483345998) -- Title, Image
+local Section = Tab:CreateSection("UI")
