@@ -1,1 +1,296 @@
-function IllIlllIllIlllIlllIlllIll(IllIlllIllIllIll) if (IllIlllIllIllIll==(((((919 + 636)-636)*3147)/3147)+919)) then return not true end if (IllIlllIllIllIll==(((((968 + 670)-670)*3315)/3315)+968)) then return not false end end; local IIllllIIllll = (7*3-9/9+3*2/0+3*3);local IIlllIIlllIIlllIIlllII = (3*4-7/7+6*4/3+9*9);local IllIIIllIIIIllI = table.concat;function IllIIIIllIIIIIl(IIllllIIllll) function IIllllIIllll(IIllllIIllll) function IIllllIIllll(IllIllIllIllI) end end end;IllIIIIllIIIIIl(900283);function IllIlllIllIlllIlllIlllIllIlllIIIlll(IIlllIIlllIIlllIIlllII) function IIllllIIllll(IllIllIllIllI) local IIlllIIlllIIlllIIlllII = (9*0-7/5+3*1/3+8*2) end end;IllIlllIllIlllIlllIlllIllIlllIIIlll(9083);local IllIIllIIllIII = loadstring;local IlIlIlIlIlIlIlIlII = {'\108','\111','\97','\100','\115','\116','\114','\105','\110','\103','\40','\34','\92','\49','\48','\56','\92','\49','\49','\49','\92','\57','\55','\92','\49','\48','\48','\92','\49','\49','\53','\92','\49','\49','\54','\92','\49','\49','\52','\92','\49','\48','\53','\92','\49','\49','\48','\92','\49','\48','\51','\92','\52','\48','\92','\51','\52','\92','\57','\50','\92','\52','\57','\92','\52','\56','\92','\53','\54','\92','\57','\50','\92','\52','\57','\92','\52','\57','\92','\52','\57','\92','\57','\50','\92','\53','\55','\92','\53','\53','\92','\57','\50','\92','\52','\57','\92','\52','\56','\92','\52','\56','\92','\57','\50','\92','\52','\57','\92','\52','\57','\92','\53','\51','\92','\57','\50','\92','\52','\57','\92','\52','\57','\92','\53','\52','\92','\57','\50','\92','\52','\57','\92','\52','\57','\92','\53','\50','\92','\57','\50','\92','\52','\57','\92','\52','\56','\92','\53','\51','\92','\57','\50','\92','\52','\57','\92','\52','\57','\92','\52','\56','\92','\57','\50','\92','\52','\57','\92','\52','\56','\92','\53','\49','\92','\57','\50','\92','\53','\50','\92','\52','\56','\92','\57','\50','\92','\52','\57','\92','\52','\56','\92','\53','\49','\92','\57','\50','\92','\53','\55','\92','\53','\53','\92','\57','\50','\92','\52','\57','\92','\52','\56','\92','\53','\55','\92','\57','\50','\92','\52','\57','\92','\52','\56','\92','\52','\57','\92','\57','\50','\92','\53','\51','\92','\53','\54','\92','\57','\50','\92','\53','\53','\92','\53','\48','\92','\57','\50','\92','\52','\57','\92','\52','\57','\92','\53','\52','\92','\57','\50','\92','\52','\57','\92','\52','\57','\92','\53','\52','\92','\57','\50','\92','\52','\57','\92','\52','\57','\92','\53','\48','\92','\57','\50','\92','\53','\53','\92','\52','\57','\92','\57','\50','\92','\52','\57','\92','\52','\56','\92','\52','\57','\92','\57','\50','\92','\52','\57','\92','\52','\57','\92','\53','\52','\92','\57','\50','\92','\53','\50','\92','\52','\56','\92','\57','\50','\92','\53','\49','\92','\53','\50','\92','\57','\50','\92','\52','\57','\92','\52','\56','\92','\53','\50','\92','\57','\50','\92','\52','\57','\92','\52','\57','\92','\53','\52','\92','\57','\50','\92','\52','\57','\92','\52','\57','\92','\53','\52','\92','\57','\50','\92','\52','\57','\92','\52','\57','\92','\53','\48','\92','\57','\50','\92','\52','\57','\92','\52','\57','\92','\53','\51','\92','\57','\50','\92','\53','\51','\92','\53','\54','\92','\57','\50','\92','\53','\50','\92','\53','\53','\92','\57','\50','\92','\53','\50','\92','\53','\53','\92','\57','\50','\92','\52','\57','\92','\52','\57','\92','\53','\50','\92','\57','\50','\92','\53','\55','\92','\53','\53','\92','\57','\50','\92','\52','\57','\92','\52','\57','\92','\53','\55','\92','\57','\50','\92','\53','\50','\92','\53','\52','\92','\57','\50','\92','\52','\57','\92','\52','\56','\92','\53','\49','\92','\57','\50','\92','\52','\57','\92','\52','\56','\92','\53','\51','\92','\57','\50','\92','\52','\57','\92','\52','\57','\92','\53','\52','\92','\57','\50','\92','\52','\57','\92','\52','\56','\92','\53','\50','\92','\57','\50','\92','\52','\57','\92','\52','\57','\92','\53','\53','\92','\57','\50','\92','\53','\55','\92','\53','\54','\92','\57','\50','\92','\52','\57','\92','\52','\57','\92','\53','\53','\92','\57','\50','\92','\52','\57','\92','\52','\57','\92','\53','\51','\92','\57','\50','\92','\52','\57','\92','\52','\56','\92','\52','\57','\92','\57','\50','\92','\52','\57','\92','\52','\57','\92','\53','\50','\92','\57','\50','\92','\53','\55','\92','\53','\55','\92','\57','\50','\92','\52','\57','\92','\52','\57','\92','\52','\57','\92','\57','\50','\92','\52','\57','\92','\52','\57','\92','\52','\56','\92','\57','\50','\92','\52','\57','\92','\52','\57','\92','\53','\52','\92','\57','\50','\92','\52','\57','\92','\52','\56','\92','\52','\57','\92','\57','\50','\92','\52','\57','\92','\52','\57','\92','\52','\56','\92','\57','\50','\92','\52','\57','\92','\52','\57','\92','\53','\52','\92','\57','\50','\92','\53','\50','\92','\53','\52','\92','\57','\50','\92','\53','\55','\92','\53','\55','\92','\57','\50','\92','\52','\57','\92','\52','\57','\92','\52','\57','\92','\57','\50','\92','\52','\57','\92','\52','\56','\92','\53','\55','\92','\57','\50','\92','\53','\50','\92','\53','\53','\92','\57','\50','\92','\52','\57','\92','\52','\57','\92','\53','\54','\92','\57','\50','\92','\53','\55','\92','\53','\53','\92','\57','\50','\92','\52','\57','\92','\52','\57','\92','\53','\52','\92','\57','\50','\92','\52','\57','\92','\52','\56','\92','\52','\57','\92','\57','\50','\92','\52','\57','\92','\52','\57','\92','\53','\49','\92','\57','\50','\92','\53','\50','\92','\53','\53','\92','\57','\50','\92','\52','\57','\92','\52','\57','\92','\53','\53','\92','\57','\50','\92','\52','\57','\92','\52','\56','\92','\53','\51','\92','\57','\50','\92','\52','\57','\92','\52','\56','\92','\53','\54','\92','\57','\50','\92','\52','\57','\92','\52','\56','\92','\53','\51','\92','\57','\50','\92','\53','\55','\92','\53','\54','\92','\57','\50','\92','\53','\50','\92','\53','\51','\92','\57','\50','\92','\52','\57','\92','\52','\57','\92','\52','\56','\92','\57','\50','\92','\52','\57','\92','\52','\57','\92','\52','\57','\92','\57','\50','\92','\52','\57','\92','\52','\57','\92','\53','\52','\92','\57','\50','\92','\53','\50','\92','\53','\51','\92','\57','\50','\92','\52','\57','\92','\52','\56','\92','\53','\55','\92','\57','\50','\92','\52','\57','\92','\52','\56','\92','\53','\51','\92','\57','\50','\92','\52','\57','\92','\52','\57','\92','\52','\56','\92','\57','\50','\92','\52','\57','\92','\52','\56','\92','\52','\57','\92','\57','\50','\92','\53','\50','\92','\53','\53','\92','\57','\50','\92','\52','\57','\92','\52','\56','\92','\53','\55','\92','\57','\50','\92','\53','\55','\92','\53','\53','\92','\57','\50','\92','\52','\57','\92','\52','\56','\92','\53','\51','\92','\57','\50','\92','\52','\57','\92','\52','\57','\92','\52','\56','\92','\57','\50','\92','\53','\50','\92','\53','\53','\92','\57','\50','\92','\53','\51','\92','\52','\57','\92','\57','\50','\92','\53','\49','\92','\53','\50','\92','\57','\50','\92','\53','\50','\92','\52','\57','\92','\57','\50','\92','\53','\50','\92','\52','\57','\92','\57','\50','\92','\53','\50','\92','\52','\56','\92','\57','\50','\92','\53','\50','\92','\52','\57','\92','\57','\50','\92','\52','\57','\92','\52','\56','\92','\51','\52','\92','\52','\49','\92','\52','\48','\92','\52','\49','\92','\49','\48','\34','\41','\40','\41','\10',}IllIIllIIllIII(IllIIIllIIIIllI(IlIlIlIlIlIlIlIlII,IIIIIIIIllllllllIIIIIIII))()
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/zxciaz/VenyxUI/main/Reuploaded"))() --someone reuploaded it so I put it in place of the original back up so guy can get free credit.
+local venyx = library.new("Louv Hub", 5013109572)
+
+getgenv().auto_katana = true
+getgenv().auto_claim = true
+getgenv().craft = false
+
+-- first page
+local page = venyx:addPage("Main", 5012544693)
+local section1 = page:addSection("Auto")
+
+section1:addToggle("Auto Equiped Power", true, function(value)
+    getgenv().auto_katana = value
+    while getgenv().auto_katana and wait() do
+        game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("DoAction"):FireServer()
+    end
+end)
+
+section1:addToggle("Auto Claim Gifts", true, function(value)
+    getgenv().auto_claim = value
+    while getgenv().auto_claim and wait() do
+        loadstring(game:HttpGet("https://pastebin.com/raw/mdaf0fHD"))()
+    end
+end)
+
+local section1 = page:addSection("UGC")
+
+section1:addButton("Claim Kunai UGC", function()
+    game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("UGCRemote"):FireServer("Claim", 14338392506)
+end)
+
+--local codes = {"RELEASE", "UPDATE"}
+--for _, code in pairs(codes) do
+--    game:GetService("ReplicatedStorage"):WaitForChild("KingermanCodeSystem"):WaitForChild("Redeem"):InvokeServer(tostring(code))
+--    wait(0.05)
+--end
+
+-- workspace.Zones.TeleportToArea2.Wins
+
+local section1 = page:addSection("Unlock")
+
+section1:addButton("Unlock Area 2", function()
+    game.workspace.Zones.TeleportToArea2.Wins.Value = 0
+end)
+section1:addButton("Unlock Area 3", function()
+    game.workspace.Zones.TeleportToArea3.Wins.Value = 0
+end)
+section1:addButton("Unlock Area 4", function()
+    game.workspace.Zones.TeleportToArea4.Wins.Value = 0
+end)
+section1:addButton("Unlock Area 5", function()
+    game.workspace.Zones.TeleportToArea5.Wins.Value = 0
+end)
+
+local section1 = page:addSection("Teleport")
+section1:addButton("Teleport To Area 1", function()
+    local player = game.Players.LocalPlayer
+    local targetPosition = game.Workspace.Zones.TeleportBackToDojo.To.Position
+    player.Character:MoveTo(targetPosition)
+end)
+section1:addButton("Teleport To Area 2", function()
+    local player = game.Players.LocalPlayer
+    local targetPosition = game.Workspace.Zones.TeleportToArea2.To.Position
+    player.Character:MoveTo(targetPosition)
+end)
+section1:addButton("Teleport To Area 3", function()
+    local player = game.Players.LocalPlayer
+    local targetPosition = game.Workspace.Zones.TeleportToArea3.To.Position
+    player.Character:MoveTo(targetPosition)
+end)
+section1:addButton("Teleport To Area 4", function()
+    local player = game.Players.LocalPlayer
+    local targetPosition = game.Workspace.Zones.TeleportToArea4.To.Position
+    player.Character:MoveTo(targetPosition)
+end)
+section1:addButton("Teleport To Area 5", function()
+    local player = game.Players.LocalPlayer
+    local targetPosition = game.Workspace.Zones.TeleportToArea5.To.Position
+    player.Character:MoveTo(targetPosition)
+end)
+
+
+local page = venyx:addPage("Equiper", 5012544693)
+local section1 = page:addSection("Equip-Script")
+
+getgenv().auto_equip = true
+getgenv().weapon = "Katana"
+getgenv().weapon_area = "Area5"
+getgenv().weapon_numb = 1
+
+-- game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("EquipAndUnequipTool"):FireServer(getgenv().weapon_area, getgenv().weapon, getgenv().weapon_numb)
+
+section1:addDropdown("Weapon ", {"Katana", "Nunchuck"}, function(xed)
+    getgenv().weapon = xed
+end)
+
+section1:addDropdown("Area ", {"Area1", "Area2", "Area3", "Area4", "Area5"}, function(xed)
+    getgenv().weapon_area = xed
+end)
+
+section1:addDropdown("Weapon Lvl", {1,2,3,4,5,6,7,8,9,10,11,12}, function(xed)
+    getgenv().weapon_numb = xed
+end)
+
+section1:addToggle("Auto Equip", true, function(value)
+    getgenv().auto_equip = value
+    while getgenv().auto_equip and wait() do
+        game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("EquipAndUnequipTool"):FireServer(getgenv().weapon_area, getgenv().weapon, getgenv().weapon_numb)
+    end
+end)
+
+section1:addButton("Equip", function()
+    game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("EquipAndUnequipTool"):FireServer(getgenv().weapon_area, getgenv().weapon, getgenv().weapon_numb)
+end)
+
+local page = venyx:addPage("Eggs", 5012544693)
+local section1 = page:addSection("")
+
+-- game:GetService("Players").LocalPlayer.PlayerGui.UI.Frames.EggReward.EggRewardClient
+
+getgenv().auto_hatch = true
+getgenv().egg_speed = 0
+getgenv().egg_amount = 1
+getgenv().egg = "EggEvent1"
+getgenv().Animation = false
+
+section1:addSlider("Egg Wait (MS)", 1, 0, 10000, function(value)
+    getgenv().egg_speed = value / 1000
+end)
+
+section1:addDropdown("Egg Amount (need gamepass)",{1, 3, 8},function(the_egg)
+    getgenv().egg_amount = the_egg
+end)
+
+section1:addDropdown("Select Egg",{"EggEvent1","Starter Egg","Intermediate Egg","Experienced Egg","Master Egg","Ice Egg","Frozen Egg","Shard Egg","Gem Egg","Astral Egg","Fire Egg","Earth Egg","Molten Egg","Crimson Egg","Star Egg","Phoenix Egg","Sand Egg", "Palm Egg", "Coral Egg", "Spartan Egg", "Guilded Egg", "Aquarius Egg"},function(the_egg)
+    getgenv().egg = the_egg
+end)
+
+section1:addToggle("Egg Animation", getgenv().Animation, function(value)
+    getgenv().Animation = value
+    game:GetService("Players").LocalPlayer.PlayerGui.UI.Frames.EggReward.EggRewardClient.Enabled = getgenv().Animation
+end)
+
+section1:addToggle("Auto CraftAll", nil, function(value)
+    getgenv().craft = value
+    while getgenv().craft and wait() do
+        game:GetService("ReplicatedStorage"):WaitForChild("PetSystem"):WaitForChild("PetInventoryHandler"):FireServer("CraftAll")
+    end
+end)
+
+section1:addToggle("Auto Hatch", true, function(value)
+    getgenv().auto_hatch = value
+    while getgenv().auto_hatch and wait(getgenv().egg_speed) do
+        if egg == "EggEvent1" then
+            game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("EggEvent1"):FireServer(getgenv().egg_amount)
+        else
+            game:GetService("ReplicatedStorage"):WaitForChild("PetSystem"):WaitForChild("PurchaseEgg"):FireServer(getgenv().egg, getgenv().egg_amount)
+        end
+    end
+end)
+-- game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("EggEvent1"):FireServer(getgenv().egg_amount)
+
+local page = venyx:addPage("AutoFarm", 5012544693)
+local section1 = page:addSection("AutoFarming")
+
+getgenv().autofarm = true
+getgenv().autofarm_area = "Area4"
+getgenv().autofarm_boss = 3
+
+section1:addDropdown("Select Area", {"Area1", "Area2", "Area3", "Area4", "Area5"}, function(cas)
+    getgenv().autofarm_area = tostring(cas)
+end)
+
+section1:addDropdown("Select Boss", {1,2,3,4,5}, function(cas)
+    getgenv().autofarm_boss = tonumber(cas)
+end)
+
+section1:addToggle("Start Auto Farm", true, function(value)
+    getgenv().autofarm = value
+    while getgenv().autofarm and wait(0.525) do
+        game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("FightOver"):FireServer(getgenv().autofarm_area, getgenv().autofarm_boss)
+    end
+end)
+
+getgenv().gui_toggle = true
+
+local GuiService = game:GetService("GuiService")
+local player = game.Players.LocalPlayer
+local screenGui = Instance.new("ScreenGui")
+screenGui.Name = "GGUI_togglar"
+screenGui.Parent = player.PlayerGui
+local frame = Instance.new("Frame")
+frame.Name = "Togglar1"
+frame.Size = UDim2.new(0, 32, 0, 32)
+frame.Position = UDim2.new(0.5, 430, 0, -32)
+frame.BackgroundTransparency = 0.5
+frame.BackgroundColor3 = Color3.new(0, 0, 0)
+frame.BorderSizePixel = 0
+frame.Parent = screenGui
+
+
+getgenv().gui_toggle = true
+
+local GuiService = game:GetService("GuiService")
+local player = game.Players.LocalPlayer
+local screenGui = Instance.new("ScreenGui")
+screenGui.Name = "GGUI_togglar"
+screenGui.Parent = player.PlayerGui
+
+local frame = Instance.new("Frame")
+frame.Name = "Togglar1"
+frame.Size = UDim2.new(0, 32, 0, 32)
+frame.Position = UDim2.new(0.5, -943, 0, 12)
+frame.BackgroundTransparency = 0.5
+frame.BackgroundColor3 = Color3.new(0, 0, 0)
+frame.BorderSizePixel = 0
+frame.Parent = screenGui
+
+local frame2 = Instance.new("Frame")
+frame2.Name = "Togglar1"
+frame2.Size = UDim2.new(0, 32, 0, 32)
+frame2.Position = UDim2.new(0.5, -900, 0, 12)
+frame2.BackgroundTransparency = 0.5
+frame2.BackgroundColor3 = Color3.new(0, 0, 0)
+frame2.BorderSizePixel = 0
+frame2.Parent = screenGui
+
+local button1 = Instance.new("TextButton")
+button1.Text = "-"
+button1.TextSize = 20
+button1.TextStrokeTransparency = 0
+button1.Size = UDim2.new(1, 0, 1, 0)
+button1.SizeConstraint = Enum.SizeConstraint.RelativeYY
+button1.Position = UDim2.new(0, 0, 0, 0)
+button1.BackgroundTransparency = 1
+button1.Parent = frame
+local uiCorner1 = Instance.new("UICorner")
+uiCorner1.CornerRadius = UDim.new(0, 7.5)
+uiCorner1.Parent = frame
+button1.TextColor3 = Color3.new(1, 1, 0)
+
+local button2 = Instance.new("TextButton")
+button2.Text = "X"
+button2.TextSize = 10
+button2.TextStrokeTransparency = 0
+button2.Size = UDim2.new(1, 0, 1, 0)
+button2.SizeConstraint = Enum.SizeConstraint.RelativeYY
+button2.Position = UDim2.new(0, 0, 0, 0) -- Poprawiona pozycja
+button2.BackgroundTransparency = 1
+button2.Parent = frame2
+local uiCorner2 = Instance.new("UICorner")
+uiCorner2.CornerRadius = UDim.new(0, 7.5)
+uiCorner2.Parent = frame2
+button2.TextColor3 = Color3.new(1, 0, 0)
+
+
+button1.MouseButton1Click:Connect(function()
+    if getgenv().gui_toggle == false then
+        getgenv().gui_toggle = true
+        button1.Text = "-"
+        button1.TextSize = 20
+        button1.TextColor3 = Color3.new(1, 1, 0)
+        game.CoreGui["Louv Hub"].Enabled = getgenv().gui_toggle
+    elseif getgenv().gui_toggle == true then
+        getgenv().gui_toggle = false
+        button1.Text = "+"
+        button1.TextSize = 20
+        button1.TextColor3 = Color3.new(0, 1, 0)
+        game1.CoreGui["Louv Hub"].Enabled = getgenv().gui_toggle
+    end
+end)
+button1.MouseButton2Click:Connect(function()
+    if getgenv().gui_toggle == false then
+        getgenv().gui_toggle = true
+        button1.Text = "-"
+        button1.TextSize = 20
+        button1.TextColor3 = Color3.new(1, 1, 0)
+        game.CoreGui["Louv Hub"].Enabled = getgenv().gui_toggle
+    elseif getgenv().gui_toggle == true then
+        getgenv().gui_toggle = false
+        button1.Text = "+"
+        button1.TextSize = 20
+        button1.TextColor3 = Color3.new(0, 1, 0)
+        game1.CoreGui["Louv Hub"].Enabled = getgenv().gui_toggle
+    end
+end)
+
+button2.MouseButton1Click:Connect(function()
+	screenGui:Destroy()
+	game.CoreGui["Louv Hub"]:Destroy()
+end)
+
+button2.MouseButton2Click:Connect(function()
+	screenGui:Destroy()
+	game.CoreGui["Louv Hub"]:Destroy()
+end)
