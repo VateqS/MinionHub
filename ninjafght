@@ -10,8 +10,6 @@ getgenv().spinner = false
 local page = venyx:addPage("Main", 5012544693)
 local section1 = page:addSection("Gifts /-/ Free")
 
-
-
 section1:addToggle("Auto Claim Gifts", nil, function(value)
     getgenv().auto_claim = value
     while getgenv().auto_claim and wait() do
@@ -91,7 +89,7 @@ end)
 --game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("DoAction"):FireServer(unpack(args))
 local section1 = page:addSection("NunChuck Dummies")
 getgenv().dummy = true
-getgenv().dummy_bag = 7
+getgenv().dummy_bag = 4
 getgenv().area_dummy = "Area5"
 
 section1:addDropdown("Area", {"Area1", "Area2", "Area3", "Area4", "Area5"}, function(xed)
@@ -107,7 +105,7 @@ section1:addToggle("Most Punch Power", nil, function(value)
     while getgenv().dummy and wait() do
         local player = game.Players.LocalPlayer
         local character = player.Character
-        character:SetPrimaryPartCFrame(CFrame.new(workspace.Dummies[getgenv().area_dummy][getgenv().dummy_bag]["Root"].Position))
+        character:SetPrimaryPartCFrame(CFrame.new(workspace.Dummies[getgenv().area_dummy][getgenv().dummy_bag]["Root"].Position) + Vector3.new(-4, 0, 2))
         local args = {[1] = getgenv().area_dummy,[2] = "Dummies",[3] = getgenv().dummy_bag}
         game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("DoAction"):FireServer(unpack(args))
         game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("DoAction"):FireServer()
@@ -134,7 +132,7 @@ section1:addToggle("Most Punch Power", nil, function(value)
         local player = game.Players.LocalPlayer
         local character = player.Character
         if getgenv().punch_bag == 7 then
-            character:SetPrimaryPartCFrame(CFrame.new(workspace.PunchingBags[getgenv().area_punch].VIP["Root"].Position))
+            character:SetPrimaryPartCFrame(CFrame.new(workspace.PunchingBags[getgenv().area_punch].VIP["Root"].Position) + Vector3.new(-4, 0, 2))
         else
             character:SetPrimaryPartCFrame(CFrame.new(workspace.PunchingBags[getgenv().area_punch][getgenv().punch_bag]["Root"].Position))
         end
@@ -274,51 +272,76 @@ section1:addButton("Teleport To Selected Boss", function()
     end
 end)
 
-
 getgenv().gui_toggle = true
 
-local GuiService = game:GetService("GuiService")
 local player = game.Players.LocalPlayer
+local playerGui = player:WaitForChild("PlayerGui")
+
 local screenGui = Instance.new("ScreenGui")
 screenGui.Name = "GGUI_togglar"
-screenGui.Parent = player.PlayerGui
-local frame = Instance.new("Frame")
-frame.Name = "Togglar1"
-frame.Size = UDim2.new(0, 32, 0, 32)
-frame.Position = UDim2.new(0.5, 430, 0, -32)
-frame.BackgroundTransparency = 0.5
-frame.BackgroundColor3 = Color3.new(0, 0, 0)
-frame.BorderSizePixel = 0
-frame.Parent = screenGui
-local button = Instance.new("TextButton")
-button.Text = "-"
-button.TextSize = 20
-button.TextStrokeTransparency = 0
-button.Size = UDim2.new(1, 0, 1, 0)
-button.SizeConstraint = Enum.SizeConstraint.RelativeYY
-button.Position = UDim2.new(0, 0, 0, 0)
-button.BackgroundTransparency = 1
-button.Parent = frame
-local uiCorner = Instance.new("UICorner")
-uiCorner.CornerRadius = UDim.new(0, 7.5)
-uiCorner.Parent = frame
-button.TextColor3 = Color3.new(1, 1, 0)
-button.MouseButton1Click:Connect(function()
-    if getgenv().gui_toggle == false then
-        getgenv().gui_toggle = true
-        button.Text = "-"
-        button.TextSize = 20
-        button.TextColor3 = Color3.new(1, 1, 0)
-        game.CoreGui["Louv Hub"].Enabled = getgenv().gui_toggle
-    elseif getgenv().gui_toggle == true then
-        getgenv().gui_toggle = false
-        button.Text = "+"
-        button.TextSize = 20
-        button.TextColor3 = Color3.new(0, 1, 0)
-        game.CoreGui["Louv Hub"].Enabled = getgenv().gui_toggle
+screenGui.Parent = playerGui
+
+local button1 = Instance.new("TextButton")
+button1.Text = "-"
+button1.TextSize = 20
+button1.Size = UDim2.new(0, 32, 0, 32)
+button1.Position = UDim2.new(0, 16, 0, 10)
+button1.BackgroundTransparency = 0.5
+button1.BackgroundColor3 = Color3.new(0, 0, 0)
+button1.BorderSizePixel = 0
+button1.Parent = screenGui
+button1.TextColor3 = Color3.new(1, 1, 0)
+button1.TextStrokeTransparency = 0
+
+local uiCorner1 = Instance.new("UICorner")
+uiCorner1.CornerRadius = UDim.new(0, 7.5)
+uiCorner1.Parent = button1
+
+local button2 = Instance.new("TextButton")
+button2.Text = "X"
+button2.TextSize = 12
+button2.Size = UDim2.new(0, 32, 0, 32)
+button2.Position = UDim2.new(0, 60, 0, 10)
+button2.BackgroundTransparency = 0.5
+button2.BackgroundColor3 = Color3.new(0, 0, 0)
+button2.BorderSizePixel = 0
+button2.Parent = screenGui
+button2.TextColor3 = Color3.new(1, 0, 0)
+button2.TextStrokeTransparency = 0
+
+local uiCorner2 = Instance.new("UICorner")
+uiCorner2.CornerRadius = UDim.new(0, 7.5)
+uiCorner2.Parent = button2
+
+button1.MouseButton1Click:Connect(function()
+    getgenv().gui_toggle = not getgenv().gui_toggle
+    if getgenv().gui_toggle then
+        button1.Text = "-"
+        button1.TextColor3 = Color3.new(1, 1, 0)
+        game.CoreGui["Louv Hub"].Enabled = true
+    else
+        button1.Text = "+"
+        button1.TextColor3 = Color3.new(0, 1, 0)
+        game.CoreGui["Louv Hub"].Enabled = false
     end
 end)
-button.MouseButton2Click:Connect(function()
-    screenGui:Destroy()
+button1.MouseButton2Click:Connect(function()
+    getgenv().gui_toggle = not getgenv().gui_toggle
+    if getgenv().gui_toggle then
+        button1.Text = "-"
+        button1.TextColor3 = Color3.new(1, 1, 0)
+        game.CoreGui["Louv Hub"].Enabled = true
+    else
+        button1.Text = "+"
+        button1.TextColor3 = Color3.new(0, 1, 0)
+        game.CoreGui["Louv Hub"].Enabled = false
+    end
+end)
+button2.MouseButton1Click:Connect(function()
+	screenGui:Destroy()
+    game.CoreGui["Louv Hub"]:Destroy()
+end)
+button2.MouseButton2Click:Connect(function()
+	screenGui:Destroy()
     game.CoreGui["Louv Hub"]:Destroy()
 end)
