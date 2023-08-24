@@ -136,6 +136,15 @@ section1:addButton("Esp/Wh", function()
     loadstring(game:HttpGet("https://pastebin.com/raw/ZVJLUTF9"))()
 end)
 
+getgenv().clickie = false
+
+section1:addToggle("AutoClick", false, function(value)
+    getgenv().clickie = value
+
+    while getgenv().clickie and wait() do
+        game:GetService("ReplicatedStorage"):WaitForChild("TugRemote"):FireServer()
+    end
+end)
 
 -- # IGNORE \/
 
