@@ -146,6 +146,86 @@ section1:addToggle("AutoClick", false, function(value)
     end
 end)
 
+local page = venyx:addPage("Misc", 5012544693)
+local section1 = page:addSection("Miscealous")
+
+section1:addButton("2buttons", function()
+    screenGui:Destroy()
+    getgenv().gui_toggle = true
+
+    local player = game.Players.LocalPlayer
+    local playerGui = player:WaitForChild("PlayerGui")
+    
+    local screenGui = Instance.new("ScreenGui")
+    screenGui.Name = "GGUI_togglar"
+    screenGui.Parent = playerGui
+    
+    local button1 = Instance.new("TextButton")
+    button1.Text = "-"
+    button1.TextSize = 20
+    button1.Size = UDim2.new(0, 32, 0, 32)
+    button1.Position = UDim2.new(0, 16, 0, 10)
+    button1.BackgroundTransparency = 0.5
+    button1.BackgroundColor3 = Color3.new(0, 0, 0)
+    button1.BorderSizePixel = 0
+    button1.Parent = screenGui
+    button1.TextColor3 = Color3.new(1, 1, 0)
+    button1.TextStrokeTransparency = 0
+    
+    local uiCorner1 = Instance.new("UICorner")
+    uiCorner1.CornerRadius = UDim.new(0, 7.5)
+    uiCorner1.Parent = button1
+    
+    local button2 = Instance.new("TextButton")
+    button2.Text = "X"
+    button2.TextSize = 12
+    button2.Size = UDim2.new(0, 32, 0, 32)
+    button2.Position = UDim2.new(0, 60, 0, 10)
+    button2.BackgroundTransparency = 0.5
+    button2.BackgroundColor3 = Color3.new(0, 0, 0)
+    button2.BorderSizePixel = 0
+    button2.Parent = screenGui
+    button2.TextColor3 = Color3.new(1, 0, 0)
+    button2.TextStrokeTransparency = 0
+    
+    local uiCorner2 = Instance.new("UICorner")
+    uiCorner2.CornerRadius = UDim.new(0, 7.5)
+    uiCorner2.Parent = button2
+    
+    button1.MouseButton1Click:Connect(function()
+        getgenv().gui_toggle = not getgenv().gui_toggle
+        if getgenv().gui_toggle then
+            button1.Text = "-"
+            button1.TextColor3 = Color3.new(1, 1, 0)
+            game.CoreGui["Louv Hub"].Enabled = true
+        else
+            button1.Text = "+"
+            button1.TextColor3 = Color3.new(0, 1, 0)
+            game.CoreGui["Louv Hub"].Enabled = false
+        end
+    end)
+    button1.MouseButton2Click:Connect(function()
+        getgenv().gui_toggle = not getgenv().gui_toggle
+        if getgenv().gui_toggle then
+            button1.Text = "-"
+            button1.TextColor3 = Color3.new(1, 1, 0)
+            game.CoreGui["Louv Hub"].Enabled = true
+        else
+            button1.Text = "+"
+            button1.TextColor3 = Color3.new(0, 1, 0)
+            game.CoreGui["Louv Hub"].Enabled = false
+        end
+    end)
+    button2.MouseButton1Click:Connect(function()
+        screenGui:Destroy()
+        game.CoreGui["Louv Hub"]:Destroy()
+    end)
+    button2.MouseButton2Click:Connect(function()
+        screenGui:Destroy()
+        game.CoreGui["Louv Hub"]:Destroy()
+    end)      
+end)
+
 -- # IGNORE \/
 
 
