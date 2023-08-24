@@ -259,7 +259,12 @@ local page = venyx:addPage("Misc", 5012544693)
 local section1 = page:addSection("Miscealous")
 
 section1:addButton("2buttons", function()
-    screenGui:Destroy()
+    
+    if game:GetService("Players").LocalPlayer.PlayerGui.GGUI_togglar then
+        game:GetService("Players").LocalPlayer.PlayerGui.GGUI_togglar:Destroy()
+    end
+
+
     getgenv().gui_toggle = true
 
     local player = game.Players.LocalPlayer
