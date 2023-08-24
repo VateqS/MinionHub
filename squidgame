@@ -33,10 +33,23 @@ section1:addButton("Skip HoneyComb - 100% WIN", function()
     game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("SugarHoneycomb"):FireServer(true)
 end)
 
+getgenv().no_disabling = false
+getgenv().speed = game.Players.LocalPlayer.Character.Humanoid.WalkSpeed
+
 local section1 = page:addSection("Player")
 
+section1:addToggle("Loop Speeding", true, function(value)
+    getgenv().no_disabling = value
+end)
+
 section1:addSlider("Speed", 16, 0, 250, function(value)
-    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = value
+    getgenv().speed = value
+    if getgenv().no_disabling == false then
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = getgenv().speed
+    end
+    while getgenv().no_disabling and wait() do
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = getgenv().speed
+    end
 end)
 
 -- game:GetService("ReplicatedStorage"):WaitForChild("TugRemote"):FireServer()
