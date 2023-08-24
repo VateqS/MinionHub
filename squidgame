@@ -67,23 +67,28 @@ getgenv().aura = false
 section1:addToggle("Baton Aura", false, function(value)
     getgenv().aura = value
     while getgenv().aura do
-        local ReplicatedStorage = game:GetService("ReplicatedStorage")
-        local Players = game:GetService("Players")
+        local playersToIgnore = {"xVateQ", "android8338lol"} -- Podaj nicki graczy, których nie chcesz bić
+
+        game:GetService("Players").PlayerAdded:Connect(function(player)
+            player.CharacterAdded:Connect(function(character)
+                local humanoid = character:WaitForChild("Humanoid")
         
-        local function replicateToPlayers(humanoid, value)
-            for _, player in pairs(Players:GetPlayers()) do
-                local character = player.Character
-                if character then
-                    local args = {
-                        [1] = character.Humanoid,
-                        [2] = value
-                    }
-                    ReplicatedStorage.Remotes.Replication:FireServer(unpack(args))
-                end
-            end
-        end
+                humanoid.TakingDamage:Connect(function(damageInfo)
+                    local attacker = damageInfo.Attacker
         
-        replicateToPlayers(game.Players.LocalPlayer.Character.Humanoid, 7)
+                    if attacker and attacker:IsA("Player") then
+                        local attackerName = attacker.Name
+        
+                        for _, playerName in pairs(playersToIgnore) do
+                            if playerName == attackerName then
+                                damageInfo:SetAttribute("Damage", 0) -- Anuluj zadawane obrażenia
+                                break -- Przerywamy pętlę, bo znaleźliśmy pasującego gracza na liście
+                            end
+                        end
+                    end
+                end)
+            end)
+        end)        
         wait()
     end
 end)
