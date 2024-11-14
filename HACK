@@ -1,0 +1,2 @@
+game:GetService("ReplicatedStorage").Remotes.GiveRolls:FireServer(-999999)
+game:GetService("ReplicatedStorage").Remotes.GivePoints:FireServer(-999999)
