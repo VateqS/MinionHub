@@ -1,2 +1,106 @@
-game:GetService("ReplicatedStorage").Remotes.GiveRolls:FireServer(-999999)
-game:GetService("ReplicatedStorage").Remotes.GivePoints:FireServer(-999999)
+local lib = loadstring(game:HttpGet("https://raw.githubusercontent.com/vateq/EZZ/main/nextui3coregui"))()
+local main = lib.Load("Rollbuck - By vateq#0")
+local TabNum1 = main:AddTab("Main")
+main:SelectTab(1)
+local section = TabNum1:AddSection("Rolls")
+
+local rolls = game:GetService("Players").LocalPlayer.PlayerGui.ButtonsGUI.Currency.Rolls.TextLabel
+
+_G.autofarm = false
+_G.autofarm2 = false
+_G.farmamount = 1
+_G.amount = 2
+_G.maxrolls = 5
+_G.cd = 5000
+
+section:AddToggle({
+    Name = "Farm Rolls",
+    Default = false,
+    Callback = function(v)
+        _G.autofarm = v
+        while _G.autofarm and task.wait(3) do
+            if tonumber(rolls.Text) < _G.maxrolls then
+                game:GetService("ReplicatedStorage").Remotes.GiveRolls:FireServer(_G.farmamount)
+            end
+        end
+    end
+})
+
+section:AddSlider({
+    Name = "Rolls Per Loop",
+    Default = 3,
+    Min = 1,
+    Max = 20,
+    Increment = 1,
+    Callback = function(v)
+        _G.farmamount = v
+    end
+})
+
+section:AddSlider({
+    Name = "Max Rolls",
+    Default = 50,
+    Min = 5,
+    Max = 90,
+    Increment = 1,
+    Callback = function(v)
+        _G.maxrolls = v
+    end
+})
+
+section:AddButton({ 
+    Title = "Get 10 Rolls",
+    Callback = function(v)
+        game:GetService("ReplicatedStorage").Remotes.GiveRolls:FireServer(10)
+    end
+})
+
+local section2 = TabNum1:AddSection("RoPoints")
+
+section2:AddToggle({
+    Name = "Farm RoPoints",
+    Default = false,
+    Callback = function(v)
+        _G.autofarm2 = v
+        while _G.autofarm2 and task.wait(_G.cd/1000) do
+            game:GetService("ReplicatedStorage").Remotes.GiveRoPoints:FireServer(_G.amount)
+        end
+    end
+})
+
+section2:AddSlider({
+    Name = "Amount to Get",
+    Default = 2,
+    Min = 1,
+    Max = 998,
+    Increment = 1,
+    Callback = function(v)
+        _G.amount = v
+    end
+})
+
+section2:AddSlider({
+    Name = "Cooldown (MS)",
+    Default = 5000,
+    Min = 0,
+    Max = 20000,
+    Increment = 2,
+    Callback = function(v)
+        _G.cd = v
+    end
+})
+
+TabNum1:AddSection("")
+TabNum1:AddSection("")
+TabNum1:AddSection("")
+TabNum1:AddSection("Best Settings: ")
+TabNum1:AddSection("")
+TabNum1:AddSection("Farm Rolls: ")
+TabNum1:AddSection(" > rolls per loop: 3")
+TabNum1:AddSection(" > max rolls: 50")
+TabNum1:AddSection("")
+TabNum1:AddSection("Farm RoPoints: ")
+TabNum1:AddSection(" > amount to get: 20")
+TabNum1:AddSection(" > cooldown: 10")
+TabNum1:AddSection("")
+TabNum1:AddSection("")
